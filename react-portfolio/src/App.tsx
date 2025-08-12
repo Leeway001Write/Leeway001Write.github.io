@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import './App.css'
 
 import NavBar from './components/NavBar.tsx'
@@ -33,17 +32,3 @@ function App() {
 }
 
 export default App
-
-function genList(n) {
-  var items = []
-  
-  for (let i = 1; i <= n; i++) {
-    if (i == n / 2) {
-      items.push(<li id="middle" key={i}>{i}</li>)
-    } else {
-      items.push(<li key={i}>{i}</li>)
-    }
-  }
-
-  return items
-}
