@@ -1,35 +1,49 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
-function App() {
-  const [count, setCount] = useState(0)
+import NavBar from './components/NavBar.tsx'
+import ProfileCard from './components/ProfileCard.tsx'
 
+function App() {
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <NavBar />
+
+      <div className="main">
+
+        <div id="home" className="home-page">
+          <ProfileCard />
+        </div>
+    
+        <div id="about-me" className="about-me-page">
+          <h1>About Me</h1>
+        </div>
+      
+        <div id="experience" className="experience-page">
+          <h1>Experience</h1>
+        </div>
+      
+        <div id="contact" className="contact-page">
+          <h1>Contact Me</h1>
+        </div>
+      
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   )
 }
 
 export default App
+
+function genList(n) {
+  var items = []
+  
+  for (let i = 1; i <= n; i++) {
+    if (i == n / 2) {
+      items.push(<li id="middle" key={i}>{i}</li>)
+    } else {
+      items.push(<li key={i}>{i}</li>)
+    }
+  }
+
+  return items
+}
