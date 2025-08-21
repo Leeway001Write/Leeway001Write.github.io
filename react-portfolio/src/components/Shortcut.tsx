@@ -2,7 +2,12 @@ import '../App.css'
 import './styles/Shortcut.css'
 import GradientBorder from '../components/GradientBorder'
 
-export default function Shortcut( { title, jump }) {
+interface Props {
+	title: string;
+	jump: string;
+}
+
+export default function Shortcut({ title, jump }: Props) {
 	return (
 		<GradientBorder borderClass="gradient-border shortcut-border">
 			<a href={jump}>

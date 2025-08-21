@@ -1,6 +1,11 @@
-import '../App.css'
+import '../App.css';
 
-export default function GradientBorder({ children, borderClass }) {
+interface Props {
+	children: React.ReactElement;
+	borderClass?: string;
+}
+
+export default function GradientBorder({ children, borderClass }: Props) {
 	return (
 			<div className={borderClass}>
 				{children}
