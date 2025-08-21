@@ -1,0 +1,69 @@
+.jump-label {
+  margin: 0px;
+  margin-top: 36px;
+  padding: 3px;
+
+  font-size: 24px;
+  text-align: center;
+  color: gray;
+  
+}
+
+.shortcut-row {
+  width: 80%;
+  height: auto;
+  margin: 16px 0px;
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.shortcut-border {
+  border-radius: 36px;
+  padding: 9px;
+  
+  background: linear-gradient(150deg, var(--color-secondary), var(--color-primary-light), var(--color-primary-dim), var(--color-dark));
+}
+
+.shortcut {
+  width: 350px;
+  height: 300px;
+
+  background: white;
+  border-color: var(--color-secondary);
+  border-radius: 36px;
+}
+
+.shortcut-banner {
+  width: 100%;
+  height: 70px;
+  padding-top: 16px;
+
+  color: white;
+  text-align: center;
+  font-size: 30px;
+
+  background: var(--color-secondary);
+  border-radius: 33px;
+}
+
+.shortcut-banner-base {
+  width: 100%;
+  height: calc(100% - 42px);
+  
+  background: inherit;
+}
+
+.shortcut-border a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.shortcut-border:hover {
+  background: var(--color-secondary-mint);
+  height: calc(100% + 3px);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}

@@ -1,9 +1,11 @@
 import '../App.css'
+import './styles/ProfileCard.css'
 import headshot_photo from '../assets/headshot.jpg'
+import GradientBorder from '../components/GradientBorder.tsx'
 
 export default function ProfileCard() {
   return (
-    <div className="profile-border">
+    <GradientBorder borderClass="gradient-border profile-border">
       <div className="profile-card">
         <div className="profile-text">
           <h1>Dallin Wright</h1>
@@ -13,6 +15,6 @@ export default function ProfileCard() {
           <img className="headshot-photo" src={headshot_photo} alt="Dallin Wright headshot"></img>
         </div>
       </div>
-    </div>
+    </GradientBorder>
   )
 }
