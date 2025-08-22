@@ -33,6 +33,8 @@
   padding: 8px 64px;
 
   color: white;
+
+  transition: all 0.7s ease, padding 0.3s ease;
 }
 
 .nav-subheading {

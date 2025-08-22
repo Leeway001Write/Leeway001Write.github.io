@@ -19,11 +19,25 @@
   justify-content: space-between;
 }
 
+
+@property --angle {
+  syntax: '<angle>';
+  inherits: false;
+  initial-value: 150deg;
+}
+
 .shortcut-border {
   border-radius: 36px;
   padding: 9px;
+  height: 300px;
   
-  background: linear-gradient(150deg, var(--color-secondary), var(--color-primary-light), var(--color-primary-dim), var(--color-dark));
+  background-color: var(--color-primary-dim);
+
+  position: relative;
+  top: 0px;
+  --angle: 150deg;
+  background: linear-gradient(var(--angle), var(--color-secondary), var(--color-primary-light), var(--color-primary-dim), var(--color-dark));
+  transition: all 0.3s ease, --angle 0.5s ease;
 }
 
 .shortcut {
@@ -60,10 +74,26 @@
   color: inherit;
 }
 
+@keyframes hover {
+  0% {
+    border-radius: 36px;
+    padding: 9px;
+  
+    background: var(--color-primary-dim);
+  }
+  100% {
+    background: var(--color-secondary-mint);
+    transform: translateY(-20px);
+    height: 320px;
+  }
+}
+
 .shortcut-border:hover {
-  background: var(--color-secondary-mint);
+  /* height: calc(100% + 3px); */
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: flex-end; */
+  top: -20px;
   height: calc(100% + 3px);
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  --angle: 60deg;
 }
