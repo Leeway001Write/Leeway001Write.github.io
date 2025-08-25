@@ -3,7 +3,7 @@
   margin-top: 36px;
   padding: 3px;
 
-  font-size: 24px;
+  font-size: 1.5em;
   text-align: center;
   color: gray;
   
@@ -12,7 +12,7 @@
 .shortcut-row {
   width: 80%;
   height: auto;
-  margin: 16px 0px;
+  margin: 36px 0px;
   
   display: flex;
   flex-direction: row;
@@ -29,7 +29,6 @@
 .shortcut-border {
   border-radius: 36px;
   padding: 9px;
-  height: 300px;
   
   background-color: var(--color-primary-dim);
 
@@ -41,12 +40,14 @@
 }
 
 .shortcut {
-  width: 350px;
-  height: 300px;
+  width: 18vw;
+  height: 33vh;
 
   background: white;
   border-color: var(--color-secondary);
   border-radius: 36px;
+
+  overflow: hidden;
 }
 
 .shortcut-banner {
@@ -56,7 +57,8 @@
 
   color: white;
   text-align: center;
-  font-size: 30px;
+  font-size: 2em;
+  white-space: nowrap;
 
   background: var(--color-secondary);
   border-radius: 33px;

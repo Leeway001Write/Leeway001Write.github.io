@@ -15,9 +15,10 @@
 }
 
 h1 {
-  font-size: 64px;
+  font-size: 4em;
+  text-align: center;
 }
 
 h2 {
-  font-size: 36px;
+  font-size: 3em;
 }

@@ -8,8 +8,6 @@ import HorizDivider from './components/HorizDivider.tsx'
 function App() {
   return (
     <>
-      <NavBar />
-
       <div className="main">
 
         <div id="home" className="home-page">
@@ -31,6 +29,15 @@ function App() {
       
         <div id="experience" className="experience-page">
           <h1>Experience</h1>
+          <div id="projects" className="projects-page">
+            <h2>Projects</h2>
+          </div>
+          <div id="employment" className="employment-page">
+            <h2>Employment</h2>
+          </div>
+          <div id="coursework" className="coursework-page">
+            <h2>Coursework</h2>
+          </div>
         </div>
       
         <div id="contact" className="contact-page">
@@ -38,6 +45,8 @@ function App() {
         </div>
       
       </div>
+
+      <NavBar />
     </>
   )
 }
