@@ -74,25 +74,7 @@
   color: inherit;
 }
 
-@keyframes hover {
-  0% {
-    border-radius: 36px;
-    padding: 9px;
-  
-    background: var(--color-primary-dim);
-  }
-  100% {
-    background: var(--color-secondary-mint);
-    transform: translateY(-20px);
-    height: 320px;
-  }
-}
-
 .shortcut-border:hover {
-  /* height: calc(100% + 3px); */
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* justify-content: flex-end; */
   top: -20px;
   height: calc(100% + 3px);
   --angle: 60deg;
