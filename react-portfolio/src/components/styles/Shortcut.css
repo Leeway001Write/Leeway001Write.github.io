@@ -11,7 +11,7 @@
 
 .shortcut-row {
   width: 80%;
-  height: auto;
+  height: 36vh;
   margin: 36px 0px;
   
   display: flex;
@@ -27,6 +27,7 @@
 }
 
 .shortcut-border {
+  height: 95%;
   border-radius: 36px;
   padding: 9px;
   
