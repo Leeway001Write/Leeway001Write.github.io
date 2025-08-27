@@ -62,14 +62,7 @@
   white-space: nowrap;
 
   background: var(--color-secondary);
-  border-radius: 33px;
-}
-
-.shortcut-banner-base {
-  width: 100%;
-  height: calc(100% - 42px);
-  
-  background: inherit;
+  border-radius: 33px 33px 0 0;
 }
 
 .shortcut-border a {

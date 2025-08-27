@@ -14,7 +14,6 @@ export default function Shortcut({ title, jump }: Props) {
 				<div className="shortcut">
 					<div className="shortcut-banner">
 						<b>{title}</b>
-						<div className="shortcut-banner-base"></div>
 					</div>
 				</div>
 			</a>
