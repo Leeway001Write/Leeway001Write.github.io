@@ -1,6 +1,8 @@
 import '../App.css'
 import './styles/ProjectCard.css'
 
+import Gallery from './Gallery.tsx'
+
 const SKILLS_PER_ROW = 3;
 
 type Project = {
@@ -30,11 +32,7 @@ export default function ProjectCard({ data }: Props) {
 				<h3 className="project-label">{ data.title }</h3>
 				<p className="project-description">{ data.description }</p>
 				<SkillsBox skills={ data.skills } />
-				<div className="project-screenshots-frame">
-					{ data.images.map((image) => (
-						<img className="project-screenshot" src={ image } alt="project screenshot"></img>
-					))}
-				</div>
+				<Gallery images={ data.images } />
 			</div>
 		</>
 	)
