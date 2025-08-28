@@ -8,15 +8,15 @@ interface Props {
 }
 
 export default function Gallery({ images }: Props) {
-  const [imageIndex, setImageIndex] = useState(null);
+  const [imageIndex, setImageIndex] = useState(-1);
 
   var overlay;
-  if (imageIndex != null) {
+  if (imageIndex >= 0) {
     overlay = <Overlay
       image={ images[imageIndex] }
       canClickNext={ imageIndex < images.length - 1 }
       canClickPrev={ imageIndex > 0 }
-      onClose={ () => setImageIndex(null) }
+      onClose={ () => setImageIndex(-1) }
       onNext={ () => setImageIndex(imageIndex + 1) }
       onPrev={ () => setImageIndex(imageIndex - 1) }
     />
@@ -39,12 +39,12 @@ interface OverlayProps {
   image: string;
   canClickPrev: boolean;
   canClickNext: boolean;
-  onClose: React.Dispatch<React.SetStateAction<number>>;
-  onNext: React.Dispatch<React.SetStateAction<number>>;
-  onPrev: React.Dispatch<React.SetStateAction<number>>;
+  onClose: () => void;
+  onNext: () => void;
+  onPrev: () => void;
 }
 
-function Overlay({ image, canClickPrev, canClickNext, onClose, onNext, onPrev }) {
+function Overlay({ image, canClickPrev, canClickNext, onClose, onNext, onPrev }: OverlayProps) {
   var prevButton, nextButton;
   if (canClickPrev) {
     prevButton = (
