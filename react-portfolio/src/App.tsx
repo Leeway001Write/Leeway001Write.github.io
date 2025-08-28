@@ -11,10 +11,15 @@ import { projects } from './Data'
 
 
 function App() {
-  const halfway = Math.floor(projects.length / 2);
-  const projectsFirstHalf = projects.slice(0, halfway);
-  const projectsSecondHalf = projects.slice(halfway, projects.length);
-
+  var projectsLeftGroup = [];
+  var projectsRightGroup = [];
+  for (let i = 0; i < projects.length; i++) {
+    if (i % 2 == 0) {
+      projectsRightGroup.push(projects[i]);
+    } else {
+      projectsLeftGroup.push(projects[i]);
+    }
+  }
   
   return (
     <>
@@ -44,14 +49,14 @@ function App() {
             <div className="left-project-frame project-frame">
               <div className="projects-header-box">
                 <h2>Projects</h2>
-                { projectsFirstHalf.map((project) => (
+                { projectsLeftGroup.map((project) => (
                     <ProjectCard data={ project }/>
                   ))
                 }
               </div>
             </div>
             <div className="right-project-frame project-frame">
-              { projectsSecondHalf.map((project) => (
+              { projectsRightGroup.map((project) => (
                   <ProjectCard data={ project }/>
               ))}
             </div>

@@ -8,7 +8,7 @@ const SKILLS_PER_ROW = 3;
 type Project = {
 	title: string;
 	current: boolean;
-	description: string;
+	description: string[];
 	skills: string[];
 	images: string[];
 }
@@ -19,18 +19,23 @@ interface Props {
 
 export default function ProjectCard({ data }: Props) {
 	var currentFlag;
+	var currentClassName = "";
 	if (data.current) {
 		currentFlag = (
 			<p><i>Current</i></p>
 		);
+		currentClassName = " project-current";
 	}
 	
 	return(
 		<>
 			<div className="current-flag">{currentFlag}</div>
-			<div className="project-card">
+			<div className={ "project-card" + currentClassName}>
 				<h3 className="project-label">{ data.title }</h3>
-				<p className="project-description">{ data.description }</p>
+				{ data.description.map((descPar) => (
+					<p className="project-description">{ descPar }</p>
+				))}
+				<p className="project-skills-label">Skills practiced:</p>
 				<SkillsBox skills={ data.skills } />
 				<Gallery images={ data.images } />
 			</div>

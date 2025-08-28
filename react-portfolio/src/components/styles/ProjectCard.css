@@ -43,7 +43,9 @@
 
 	border-radius: 30px;
 	background-color: white;
+}
 
+.project-current {
 	box-shadow: 3px 3px 3px 0px var(--color-secondary-mint);
 }
 
@@ -71,6 +73,12 @@
 
 .project-description {
   font-size: 1.2em;
+}
+
+.project-skills-label {
+  color: gray;
+  padding: 0;
+  margin: 0;
 }
 
 .project-skills-box {
