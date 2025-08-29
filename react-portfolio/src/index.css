@@ -1,5 +1,5 @@
 :root {
-  font-family:  Helvetica, sans-serif;
+  font-family: Ubuntu, Helvetica, sans-serif;
 
   --color-background: #F1FDFD;
   --color-dark: #001046;
@@ -12,6 +12,8 @@
   --color-tertiary-light: #F7CFC4;
 
   background-color: var(--color-background);
+
+  scroll-behavior: smooth;
 }
 
 h1 {
