@@ -43,10 +43,17 @@
 
 	border-radius: 30px;
 	background-color: white;
+
+	border-style: inset;
+	border-color: lightgray;
+	border-width: 6px;
 }
 
 .project-current {
-	box-shadow: 3px 3px 3px 0px var(--color-secondary-mint);
+  /* border-style: none; */
+	/* box-shadow: 3px 3px 3px 0px var(--color-secondary-mint); */
+	border-style: outset;
+	border-color: var(--color-secondary-mint)
 }
 
 .current-flag {
