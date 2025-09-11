@@ -32,8 +32,8 @@ export default function ProjectCard({ data }: Props) {
 			<div className="current-flag">{currentFlag}</div>
 			<div className={ "project-card" + currentClassName}>
 				<h3 className="project-label">{ data.title }</h3>
-				{ data.description.map((descPar) => (
-					<p className="project-description">{ descPar }</p>
+				{ data.description.map((descPar, i) => (
+					<p className="project-description" key={i}>{ descPar }</p>
 				))}
 				<p className="project-skills-label">Skills practiced:</p>
 				<SkillsBox skills={ data.skills } />
@@ -51,17 +51,17 @@ function SkillsBox({ skills }: SkillsBoxProps) {
 	const skillCount = skills.length;
 	const numRows = Math.ceil(skillCount / SKILLS_PER_ROW);
 	var rows: string[][] = [];
-	for (let r = 1; r <= numRows; r++) {
-		var i = (r-1) * 3;
-		rows[r] = skills.slice(i, i + 3);
+	for (let r = 0; r < numRows; r++) {
+		var i = r * SKILLS_PER_ROW;
+		rows[r] = skills.slice(i, i + SKILLS_PER_ROW);
 	}
 	
 	return (
 		<div className="project-skills-box">
-			{ rows.map((row: string[]) => (
-					<div className="project-skills-row">
+			{ rows.map((row: string[], i: number) => (
+					<div className="project-skills-row" key={"row-" + i}>
 						{ row.map((skill: string) => (
-								<b className="project-skill-bubble">{skill}</b>
+								<b className="project-skill-bubble" key={skill}>{skill}</b>
 						))}
 					</div>
 			))}

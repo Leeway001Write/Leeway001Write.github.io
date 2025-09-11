@@ -26,7 +26,7 @@ export default function Gallery({ images }: Props) {
     <>
       <div className="gallery-frame">
         { images.map((image, i) => (
-      		<img className="gallery-image" src={ image } onClick={ () => setImageIndex(i) } alt="image"></img>
+      		<img className="gallery-image" src={ image } onClick={ () => setImageIndex(i) } alt="image" key={"image-" + i}></img>
         ))}
       </div>
 

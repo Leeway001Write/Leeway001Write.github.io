@@ -63,15 +63,15 @@ function App() {
             <div className="left-project-frame project-frame">
               <div className="projects-header-box">
                 <h2>Projects</h2>
-                { projectsLeftGroup.map((project) => (
-                    <ProjectCard data={ project }/>
+                { projectsLeftGroup.map((project, i) => (
+                    <ProjectCard data={ project } key={"project-left-" + i}/>
                   ))
                 }
               </div>
             </div>
             <div className="right-project-frame project-frame">
-              { projectsRightGroup.map((project) => (
-                  <ProjectCard data={ project }/>
+              { projectsRightGroup.map((project, i) => (
+                  <ProjectCard data={ project } key={"project-right-" + i}/>
               ))}
             </div>
           </div>

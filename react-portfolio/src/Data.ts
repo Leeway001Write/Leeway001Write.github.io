@@ -1,4 +1,6 @@
 import thumbnail from './assets/THUMBNAIL.png'
+import portfolio1 from "./assets/project-images/portfolio.png"
+import portfolio2 from "./assets/project-images/portfolio-src.png"
 
 export const projects = [
   {
@@ -6,7 +8,7 @@ export const projects = [
     current: true,
     description: ["This website is made from scratch, using only base React and Vite tools. HTML, CSS, and Typescript were all manually written.", "This portfolio is intended to showcase my technical experience in the same light I view it (see *About Me*)."],
     skills: ["React + Vite", "HTML + CSS", ],
-    images: [thumbnail]
+    images: [portfolio1, portfolio2]
   },
   {
     title: "Undergraduate Research Project (WIP)",
