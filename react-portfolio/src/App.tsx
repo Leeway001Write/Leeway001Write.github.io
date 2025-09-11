@@ -9,6 +9,8 @@ import Shortcut from './components/Shortcut.tsx'
 import ProjectCard from './components/ProjectCard.tsx'
 import { projects } from './Data'
 
+const resume = './Resume_Dallin-Wright.pdf';
+
 
 function App() {
   var projectsLeftGroup = [];
@@ -24,6 +26,16 @@ function App() {
   return (
     <>
       <div className="main">
+
+        <div className="header">
+          <p>Welcome! This <b>Portfolio</b> showcases some of my technical ability.</p>
+          <div>
+            <p>For my Résumé, <b>click here {">"}</b></p>
+            <a href={resume} target="_blank">
+              <button className="goto-resume-button"><b>📄 View Resume</b></button>
+            </a>
+          </div>
+        </div>
 
         <div id="home" className="home-page">
           <ProfileCard />
@@ -41,6 +53,8 @@ function App() {
         <div id="about-me" className="about-me-page">
           <h1>About Me</h1>
         </div>
+
+        <HorizDivider />
       
         <div id="experience" className="experience-page">
           <h1>Experience</h1>

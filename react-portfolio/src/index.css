@@ -16,6 +16,10 @@
   scroll-behavior: smooth;
 }
 
+body {
+  margin: 0;
+}
+
 h1 {
   font-size: 4em;
   text-align: center;
