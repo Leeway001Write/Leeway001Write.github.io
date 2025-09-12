@@ -1,6 +1,9 @@
 import '../App.css'
 import './styles/ProjectCard.css'
 
+import { FaGithub } from "react-icons/fa"
+import { IoMdOpen } from "react-icons/io"
+
 import Gallery from './Gallery.tsx'
 
 const SKILLS_PER_ROW = 3;
@@ -8,7 +11,7 @@ const SKILLS_PER_ROW = 3;
 type Project = {
 	title: string;
 	current: boolean;
-	description: string[];
+	description: React.ReactElement;
 	skills: string[];
 	images: string[];
 }
@@ -31,16 +34,37 @@ export default function ProjectCard({ data }: Props) {
 		<>
 			<div className="current-flag">{currentFlag}</div>
 			<div className={ "project-card" + currentClassName}>
+				<ExternalLink link={ data.link } />
 				<h3 className="project-label">{ data.title }</h3>
-				{ data.description.map((descPar, i) => (
-					<p className="project-description" key={i}>{ descPar }</p>
-				))}
+				<div className="project-description">
+					{ data.description }
+				</div>
 				<p className="project-skills-label">Skills practiced:</p>
 				<SkillsBox skills={ data.skills } />
 				<Gallery images={ data.images } />
 			</div>
 		</>
 	)
+}
+
+interface ExternalLinkProps {
+	link: string;
+}
+
+function ExternalLink({ link }: ExternalLinkProps) {
+	if (link == null) {
+		return;		
+	}
+
+	return (
+		<a href={ link } target="_blank">
+			<button className="project-external-link">
+				<FaGithub size={24}/>
+				<p>View repository</p>
+				<IoMdOpen size={16}/>
+			</button>
+		</a>
+	);
 }
 
 interface SkillsBoxProps {

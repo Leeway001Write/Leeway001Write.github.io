@@ -7,7 +7,7 @@ import ProfileCard from './components/ProfileCard.tsx'
 import Shortcut from './components/Shortcut.tsx'
 
 import ProjectCard from './components/ProjectCard.tsx'
-import { projects } from './Data'
+import { projects } from './Data.tsx'
 
 const resume = './Resume_Dallin-Wright.pdf';
 
@@ -65,8 +65,7 @@ function App() {
                 <h2>Projects</h2>
                 { projectsLeftGroup.map((project, i) => (
                     <ProjectCard data={ project } key={"project-left-" + i}/>
-                  ))
-                }
+                ))}
               </div>
             </div>
             <div className="right-project-frame project-frame">
