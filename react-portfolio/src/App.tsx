@@ -6,6 +6,8 @@ import NavBar from './components/NavBar.tsx'
 import ProfileCard from './components/ProfileCard.tsx'
 import Shortcut from './components/Shortcut.tsx'
 
+import AboutMe from './components/AboutMe.tsx'
+
 import ProjectCard from './components/ProjectCard.tsx'
 import { projects } from './Data.tsx'
 
@@ -52,10 +54,9 @@ function App() {
   
         <div id="about-me" className="about-me-page">
           <h1>About Me</h1>
+          <AboutMe />
         </div>
-
-        <HorizDivider />
-      
+     
         <div id="experience" className="experience-page">
           <h1>Experience</h1>
 

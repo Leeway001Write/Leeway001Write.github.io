@@ -1,0 +1,57 @@
+@property --angle{
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: -30deg;
+}
+
+@keyframes gradient-spin {
+  from {--angle: -30deg;}
+  to {--angle: 330deg;}
+}
+
+.about-me-page {
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.about-me-border {
+  width: 70%;
+  padding: 16px;
+
+  border-radius: 200px;
+  background: linear-gradient(var(--angle), var(--color-primary-dim), var(--color-primary-light), var(--color-secondary), var(--color-secondary-mint));
+
+  animation-name: gradient-spin;
+  animation-iteration-count: infinite;
+  animation-duration: 8s;
+}
+
+.about-me-section {
+  width: auto;
+  height: 100%;
+  padding: 1em 4em;
+
+  font-size: 2em;
+  text-indent: 1em;
+
+  background-color: var(--color-background);
+  border-radius: 6em;
+}
+
+.about-me-name {
+  font-size: 1.5em;
+  margin-right: 0.5em;
+  margin-bottom: 0.5em;
+
+  color: var(--color-secondary);
+}
+
+.about-me-highlight {
+  font-weight: bold;
+  color: var(--color-secondary-mint);
+}
