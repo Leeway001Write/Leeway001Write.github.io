@@ -1,4 +1,4 @@
-import thumbnail from './assets/THUMBNAIL.png'
+// import thumbnail from './assets/THUMBNAIL.png'
 import portfolio1 from "./assets/project-images/portfolio.png"
 import portfolio2 from "./assets/project-images/portfolio-src.png"
 
@@ -11,7 +11,7 @@ interface Project {
 	images: string[];
 }
 
-export const projects = [
+export const projects: Project[] = [
   {
     title: "This Portfolio (WIP)",
     link: "https://github.com/Leeway001Write/Leeway001Write.github.io",

@@ -10,6 +10,7 @@ const SKILLS_PER_ROW = 3;
 
 type Project = {
 	title: string;
+	link?: string;
 	current: boolean;
 	description: React.ReactElement;
 	skills: string[];
@@ -48,7 +49,7 @@ export default function ProjectCard({ data }: Props) {
 }
 
 interface ExternalLinkProps {
-	link: string;
+	link?: string;
 }
 
 function ExternalLink({ link }: ExternalLinkProps) {
