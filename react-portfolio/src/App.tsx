@@ -11,6 +11,8 @@ import AboutMe from './components/AboutMe.tsx'
 import ProjectCard from './components/ProjectCard.tsx'
 import { projects } from './Data.tsx'
 
+import SocialButton from './components/SocialButton.tsx'
+
 const resume = './Resume_Dallin-Wright.pdf';
 
 
@@ -78,15 +80,23 @@ function App() {
 
            <div id="employment" className="employment-page">
             <h2>Employment</h2>
+            <i>Coming Soon</i>
           </div>
  
           <div id="coursework" className="coursework-page">
             <h2>Coursework</h2>
+            <i>Coming Soon</i>
           </div>
         </div>
       
         <div id="contact" className="contact-page">
           <h1>Contact Me</h1>
+          <div className="socials-row">
+            <SocialButton type="linkedin" />
+            <SocialButton type="github" />
+            <SocialButton type="email" />
+            <SocialButton type="byu" />
+          </div>
         </div>
       
       </div>
