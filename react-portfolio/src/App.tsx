@@ -49,7 +49,7 @@ function App() {
           </div>
           <div className="shortcut-row">
             <Shortcut title="About Me" jump="#about-me" />
-            <Shortcut title="Projects" jump="#experience" />
+            <Shortcut title="Projects" jump="#projects" />
             <Shortcut title="Experience" jump="#experience" />
           </div>
         </div>

@@ -65,6 +65,13 @@
   border-radius: 33px 33px 0 0;
 }
 
+.shortcut img {
+  width: 100%;
+  height: auto;
+
+  filter: blur(2px) grayscale(80%);
+}
+
 .shortcut-border a {
   text-decoration: none;
   color: inherit;
