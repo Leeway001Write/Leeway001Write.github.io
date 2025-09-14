@@ -5,6 +5,7 @@ import GradientBorder from './GradientBorder'
 
 import thumbAboutMe from '../assets/shortcut-thumbnails/about-me.png'
 import thumbProjects from '../assets/shortcut-thumbnails/projects.png'
+import thumbContact from '../assets/shortcut-thumbnails/contact.png'
 
 interface Props {
 	title: string;
@@ -13,11 +14,24 @@ interface Props {
 
 export default function Shortcut({ title, jump }: Props) {
 	var image = "";
-	if (title == "About Me") {
-		image = thumbAboutMe;
-	} else if (title == "Projects") {
-		image = thumbProjects;
+
+	switch (title) {
+		case "About Me":
+			image = thumbAboutMe;
+			break;
+
+		case "Projects":
+			image = thumbProjects;
+			break;
+
+		case "Contact":
+			image = thumbContact;
+			break;
+
+		default:
+			break;
 	}
+
 	return (
 		<GradientBorder borderClass="gradient-border shortcut-border">
 			<a href={jump}>

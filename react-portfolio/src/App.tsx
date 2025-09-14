@@ -50,7 +50,7 @@ function App() {
           <div className="shortcut-row">
             <Shortcut title="About Me" jump="#about-me" />
             <Shortcut title="Projects" jump="#projects" />
-            <Shortcut title="Experience" jump="#experience" />
+            <Shortcut title="Contact" jump="#contact" />
           </div>
         </div>
   
