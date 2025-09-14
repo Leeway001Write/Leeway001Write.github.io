@@ -1,5 +1,5 @@
 .gallery-frame {
-  width: auto;
+  width: 100%;
   height: auto;
 
   display: flex;
@@ -10,6 +10,7 @@
 .gallery-image {
   width: 100%;
   height: auto;
+  max-height: 250px;
   margin: 0px 6px;
 
   object-fit: contain;
