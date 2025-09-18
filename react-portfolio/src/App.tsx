@@ -80,12 +80,12 @@ function App() {
 
            <div id="employment" className="employment-page">
             <h2>Employment</h2>
-            <i>Coming Soon</i>
+            <i>(Coming Soon) - See <a href="#top">resume</a></i>
           </div>
  
           <div id="coursework" className="coursework-page">
             <h2>Coursework</h2>
-            <i>Coming Soon</i>
+            <i>(Coming Soon) - See <a href="#top">resume</a></i>
           </div>
         </div>
       
