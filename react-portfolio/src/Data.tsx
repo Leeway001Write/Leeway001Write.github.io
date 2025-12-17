@@ -1,6 +1,8 @@
 // import thumbnail from './assets/THUMBNAIL.png'
 import portfolio1 from "./assets/project-images/portfolio.png"
 import portfolio2 from "./assets/project-images/portfolio-src.png"
+import sincerelySending from "./assets/project-images/sincerely-sending.png"
+import sincerelyLetter from "./assets/project-images/sincerely-letter.png"
 import spaceJunk from "./assets/project-images/space-junk.png"
 import jamResults from "./assets/project-images/jam-results.png"
 import controller from "./assets/project-images/controller.png"
@@ -31,7 +33,7 @@ export const projects: Project[] = [
   {
     title: "This Portfolio (WIP)",
     link: "https://github.com/Leeway001Write/Leeway001Write.github.io",
-    current: true,
+    current: false,
     description: (
       <>
         <p>This website is intended to showcase some of my hard skills and experience.</p>
@@ -40,6 +42,22 @@ export const projects: Project[] = [
     ),
     skills: ["React + Vite", "HTML + CSS", "git", "GitHub Pages"],
     images: [portfolio1, portfolio2]
+  },
+  {
+    title: "Full-Stack Messaging Web App",
+    link: "https://github.com/Leeway001Write/startup",
+    current: false,
+    description: (
+        <>
+          <p>Fall 2025 | <strong>CS 260 - Web Development</strong> course at BYU</p>
+          <p>Website is hosted online <a href="https://startup-leeway001write.vercel.app/">here</a>.</p>
+          <p>The purpose of this semester-long project was to develop a full-stack application from scratch to gain experience with tools in all areas of website development. This included skills that I was less confident in before such as WebSocket, HTTP Endpoints, and Bootstrap CSS.</p>
+          <p>Having completed this project, I feel I new have an <strong>intermediate level</strong> of competence in all of these areas."</p>
+          <p>The app itself is a cozy messaging service designed to be more <i>meaningful</i> than simply sending a text. It's a way to reach out without needing to send a physical letter.</p>
+        </>
+    ),
+    skills: ["Full-Stack Development", "React + Node.js", "Express", "MongoDB", "REST APIs", "React Router", "AWS EC2", "WebSocket", "Bootstrap CSS"],
+    images: [sincerelySending, sincerelyLetter]
   },
   {
     title: "Game Jam Submission",
