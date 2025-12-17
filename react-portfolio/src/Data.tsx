@@ -3,6 +3,11 @@ import portfolio1 from "./assets/project-images/portfolio.png"
 import portfolio2 from "./assets/project-images/portfolio-src.png"
 import sincerelySending from "./assets/project-images/sincerely-sending.png"
 import sincerelyLetter from "./assets/project-images/sincerely-letter.png"
+import femtosat0 from "./assets/project-images/femtosat-0.png"
+import femtosat1 from "./assets/project-images/femtosat-1.png"
+import femtosat2 from "./assets/project-images/femtosat-2.png"  
+import femtosat3 from "./assets/project-images/femtosat-3.png"
+import femtosat4 from "./assets/project-images/femtosat-4.png"
 import spaceJunk from "./assets/project-images/space-junk.png"
 import jamResults from "./assets/project-images/jam-results.png"
 import controller from "./assets/project-images/controller.png"
@@ -42,6 +47,20 @@ export const projects: Project[] = [
     ),
     skills: ["React + Vite", "HTML + CSS", "git", "GitHub Pages"],
     images: [portfolio1, portfolio2]
+  },
+  {
+    title: "Femtosat Engineering Competition",
+    link: "https://github.com/Leeway001Write/femtosat",
+    current: false,
+    description: (
+        <>
+            <p>Fall 2025 | <strong>BYU Spacecraft Club</strong></p>
+            <p>As a team of four we designed and assembled a <strong>custom PCB</strong> for a femtosatellite payload, which was then launched on a model rocket to collect Accelerometer and Barometric data.</p>
+            <p>We then presented design process and launch data to other club members, and won <strong>1st Place!</strong></p>
+        </>
+    ),
+    skills: ["Schematic Design", "PCB Design", "Arduino Programming", "MATLAB Plotting", "Surface Mount Soldering"],
+    images: [femtosat0, femtosat1, femtosat2, femtosat3, femtosat4]
   },
   {
     title: "Full-Stack Messaging Web App",
