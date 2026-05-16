@@ -16,16 +16,28 @@ interface Project {
 
 export const projects: Project[] = [
   {
-    title: "Undergraduate Research Project (WIP)",
+    title: "RoboNation Robotics Competition",
     current: true,
     description: (
       <>
-        <p>Feb 2025 - Current | <strong>BYU Usable Security and Privacy Lab</strong></p>
-        <p>Conducted academic research to improve Account Security Interfaces for FIDO2 Passkeys.</p>
-        <p>This project is mentored by <strong>Dr. Daniel Zappala.</strong></p>
+        <p>I am the Communications Officer for an up-and-coming competitive robotics team at Brigham Young University.</p>
+        <p>We are preparing for the RoboBoat competition in the coming months.</p>
       </>
     ),
-    skills: ["Studying research", "Small team cooperation", "LaTeX", "Overleaf"],
+    skills: ["Leadership", "Competitive Robotics"],
+    images: []
+  },
+  {
+    title: "Undergraduate Research Project",
+    current: false,
+    description: (
+      <>
+        <p>Feb 2025 - May 2026 | <strong>BYU Usable Security and Privacy Lab</strong></p>
+        <p>Submitted academic research to improve Account Security Interfaces for FIDO2 Passkeys.</p>
+        <p>This project was mentored by <strong>Dr. Daniel Zappala.</strong></p>
+      </>
+    ),
+    skills: ["Academic research", "Small team cooperation", "LaTeX", "Overleaf"],
     images: []
   },
   {
@@ -47,7 +59,7 @@ export const projects: Project[] = [
     current: false,
     description: (
       <>
-        <p>July 2025 | MelonJam 6 - <i>Compound</i></p>
+        <p>July 2025 | MelonJam 6 | Theme: <i>Compound</i></p>
         <p>In a team of three, we developed a game using the Godot game engine in under 36 hours. Overall, we <strong>ranked 33rd</strong> out of 131 entries.</p>
         <p><a href="https://itch.io/jam/melonjam6/rate/3751910">Click to view submission on Itch.io</a>, or play <i>Space Junk</i> <a href="https://leeway001.itch.io/space-junk">here</a>.</p>
       </>
