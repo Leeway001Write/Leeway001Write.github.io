@@ -15,6 +15,11 @@
 .main {
   width: calc(100% - 300px);
   overflow: hidden;
+
+  /* Hide nav bar on small screens (mobile) */
+  @media (max-width: 700px) {
+    width: 100%;
+  }
 }
 
 .header {

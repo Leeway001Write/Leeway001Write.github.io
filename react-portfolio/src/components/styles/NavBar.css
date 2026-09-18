@@ -16,6 +16,14 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+
+
+  /* Hide nav bar on small screens (mobile) */
+  @media (max-width: 700px) {
+    visibility: hidden;
+    width: 0px;
+  }
 }
 
 .nav-list {
