@@ -13,6 +13,10 @@ import jamResults from "./assets/project-images/jam-results.png"
 import controller from "./assets/project-images/controller.png"
 import robotics1 from "./assets/project-images/byu-robotics-1.jpeg"
 import robonation from "./assets/project-images/robonation.jpeg"
+import receiver1 from "./assets/project-images/receiver-circuit-1.png"
+import receiver2 from "./assets/project-images/receiver-circuit-2.png"
+import receiver3 from "./assets/project-images/receiver-breadboard.png"
+import biasCircuit from "./assets/project-images/bias-circuit.png"
 
 interface Project {
 	title: string;
@@ -124,8 +128,41 @@ export const projects: Project[] = [
   }
 ]
 
-/*
-- CS 260
-- Mobile Controller
-- Game Development
-*/
+export const schoolwork: Project[] = [
+  {
+    title: "Circuit Design Course",
+    current: true,
+    description: (
+      <>
+        <p>From course description:</p>
+        <p><i>"This course emphasizes amplifier gain and frequency response, which are principles that govern the performance of both analog and digital systems."</i></p>
+      </>
+    ),
+    skills: ["Amplifiers & filters", "Circuit design", "SPICE simulation"],
+    images: []
+  },
+  {
+    title: "(WIP) Laser Tag Receiver Circuit",
+    current: true,
+    description: (
+      <>
+        <p>This year we are applying our circuit knowledge to design a Laser Tag system.</p>
+        <p>Below are samples of our early circuit design for the receiver.</p>
+      </>
+    ),
+    skills: ["Active filters", "Circuit design"],
+    images: [receiver1, receiver2, receiver3]
+  },
+  {
+    title: "ngSPICE Experience",
+    current: false,
+    description: (
+      <>
+        <p>My Circuit Design course creates opportunties for me to practice modeling and simulating circuits in SPICE.</p>
+        <p>Below is a model for a circuit which represents filtering for an AC photodiode signal, requiring a bias voltage on the Op Amp.</p>
+      </>
+    ),
+    skills: ["SPICE"],
+    images: [biasCircuit]
+  }
+]
