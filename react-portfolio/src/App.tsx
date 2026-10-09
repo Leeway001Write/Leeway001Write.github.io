@@ -9,7 +9,7 @@ import Shortcut from './components/Shortcut.tsx'
 import AboutMe from './components/AboutMe.tsx'
 
 import ProjectCard from './components/ProjectCard.tsx'
-import { projects, schoolwork } from './Data.tsx'
+import { projects, coursework } from './Data.tsx'
 
 import SocialButton from './components/SocialButton.tsx'
 
@@ -26,13 +26,13 @@ function App() {
       projectsLeftGroup.push(projects[i]);
     }
   }
-  var schoolworkLeftGroup = [];
-  var schoolworkRightGroup = [];
-  for (let i = 0; i < schoolwork.length; i++) {
+  var courseworkLeftGroup = [];
+  var courseworkRightGroup = [];
+  for (let i = 0; i < coursework.length; i++) {
     if (i % 2 == 0) {
-      schoolworkRightGroup.push(schoolwork[i]);
+      courseworkRightGroup.push(coursework[i]);
     } else {
-      schoolworkLeftGroup.push(schoolwork[i]);
+      courseworkLeftGroup.push(coursework[i]);
     }
   }
   
@@ -87,17 +87,17 @@ function App() {
             </div>
           </div>
 
-          <div id="schoolwork" className="schoolwork-page">
+          <div id="coursework" className="coursework-page">
             <div className="left-project-frame project-frame">
               <div className="projects-header-box">
-                <h2>Schoolwork</h2>
-                { schoolworkLeftGroup.map((project, i) => (
+                <h2>Coursework</h2>
+                { courseworkLeftGroup.map((project, i) => (
                     <ProjectCard data={ project } key={"project-left-" + i}/>
                 ))}
               </div>
             </div>
             <div className="right-project-frame project-frame">
-              { schoolworkRightGroup.map((project, i) => (
+              { courseworkRightGroup.map((project, i) => (
                   <ProjectCard data={ project } key={"project-right-" + i}/>
               ))}
             </div>

@@ -128,7 +128,7 @@ export const projects: Project[] = [
   }
 ]
 
-export const schoolwork: Project[] = [
+export const coursework: Project[] = [
   {
     title: "Circuit Design Course",
     current: true,
