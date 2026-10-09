@@ -11,6 +11,8 @@ import femtosat4 from "./assets/project-images/femtosat-4.png"
 import spaceJunk from "./assets/project-images/space-junk.png"
 import jamResults from "./assets/project-images/jam-results.png"
 import controller from "./assets/project-images/controller.png"
+import robotics1 from "./assets/project-images/byu-robotics-1.jpeg"
+import robonation from "./assets/project-images/robonation.jpeg"
 
 interface Project {
 	title: string;
@@ -29,10 +31,11 @@ export const projects: Project[] = [
       <>
         <p>I am the Communications Officer for an up-and-coming competitive robotics team at Brigham Young University.</p>
         <p>We are preparing for the RoboBoat competition in the coming months.</p>
+        <p>Visit our <a href="https://yrobotics.byu.edu/">website</a>.</p>
       </>
     ),
     skills: ["Leadership", "Competitive Robotics"],
-    images: []
+    images: [robotics1, robonation]
   },
   {
     title: "Undergraduate Research Project",
@@ -55,6 +58,7 @@ export const projects: Project[] = [
       <>
         <p>This website is intended to showcase some of my hard skills and experience.</p>
         <p>It's <strong>made from scratch</strong>, using only base React and Vite tools. HTML, CSS, and Typescript were all manually written. This was my first major project using React.</p>
+        <p>This page has poor mobile support. I have practiced creating more mobile responsive websites since, such as the <a href="https://support.et.byu.edu">BYU Engineering IT support site</a>.</p>
       </>
     ),
     skills: ["React + Vite", "HTML + CSS", "git", "GitHub Pages"],
