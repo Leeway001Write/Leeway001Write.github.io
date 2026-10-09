@@ -136,7 +136,8 @@ export const coursework: Project[] = [
       <>
         <p>From course description:</p>
         <p><i>"This course emphasizes amplifier gain and frequency response, which are principles that govern the performance of both analog and digital systems."</i></p>
-        <p><strong style={{color: "red"}}>Design Journey:</strong></p>
+        <p><strong style={{color: "var(--color-secondary-mint)"}}>Design Journey:</strong></p>
+        <p>Up to this point in the course, I have learned just how non-ideal circuit components can be. I'm curious to explore whether the better solution is to measure components with precision or to <i>design for</i> imperfections to still work.</p>
       </>
     ),
     skills: ["Amplifiers & filters", "Circuit design", "SPICE simulation"],
@@ -148,6 +149,7 @@ export const coursework: Project[] = [
     description: (
       <>
         <p>This year we are applying our circuit knowledge to design a Laser Tag system.</p>
+        <p>The receiver circuit is designed to amplify signals on a 1 to 4 kHz range while filtering out (attenuating) noise outside that range.</p>
         <p>Below are samples of our early circuit design for the receiver.</p>
       </>
     ),
