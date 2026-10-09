@@ -12,6 +12,7 @@ export default function NavBar() {
         <li><a className="nav-heading" href="#experience"><b>Experience</b></a>
           <ul className="nav-list">
             <li><a className="nav-subheading" href="#projects">Projects</a></li>
+            <li><a className="nav-subheading" href="#coursework">Coursework</a></li>
             {/* <li><a className="nav-subheading" href="#employment">Empoyment</a></li>
             <li><a className="nav-subheading" href="#coursework">Coursework</a></li> */}
           </ul>

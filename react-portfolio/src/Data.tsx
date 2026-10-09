@@ -136,6 +136,7 @@ export const coursework: Project[] = [
       <>
         <p>From course description:</p>
         <p><i>"This course emphasizes amplifier gain and frequency response, which are principles that govern the performance of both analog and digital systems."</i></p>
+        <p><strong style={{color: "red"}}>Design Journey:</strong></p>
       </>
     ),
     skills: ["Amplifiers & filters", "Circuit design", "SPICE simulation"],
