@@ -17,6 +17,9 @@ import receiver1 from "./assets/project-images/receiver-circuit-1.png"
 import receiver2 from "./assets/project-images/receiver-circuit-2.png"
 import receiver3 from "./assets/project-images/receiver-breadboard.png"
 import biasCircuit from "./assets/project-images/bias-circuit.png"
+import receiverPcb1 from "./assets/project-images/receiver-pcb-front.png"
+import receiverPcb2 from "./assets/project-images/receiver-pcb-back.png"
+import diode1 from "./assets/project-images/diode-circuit.png"
 
 interface Project {
 	title: string;
@@ -136,25 +139,58 @@ export const coursework: Project[] = [
       <>
         <p>From course description:</p>
         <p><i>"This course emphasizes amplifier gain and frequency response, which are principles that govern the performance of both analog and digital systems."</i></p>
-        <p><strong style={{color: "var(--color-secondary-mint)"}}>Design Journey:</strong></p>
-        <p>Up to this point in the course, I have learned just how non-ideal circuit components can be. I'm curious to explore whether the better solution is to measure components with precision or to <i>design for</i> imperfections to still work.</p>
+        <p><span className="emphasize">Design Journey:</span></p>
+        <p>Prior to this course, I could solve basic Op Amp or LRC circuits utilizing node voltage techniques.</p>
+        <p>I now not only have a understanding of a wider variety of circuit components, but I can confidently apply complex circuit analysis tools, such as large and small signal analysis of diodes and mosfets or SPICE -aided design.</p>
       </>
     ),
-    skills: ["Amplifiers & filters", "Circuit design", "SPICE simulation"],
+    skills: ["Amplifiers & filters", "Circuit design", "SPICE simulation", "Partner work"],
     images: []
   },
   {
-    title: "(WIP) Laser Tag Receiver Circuit",
-    current: true,
+    title: "Laser Tag Receiver Design",
+    current: false,
     description: (
       <>
         <p>This year we are applying our circuit knowledge to design a Laser Tag system.</p>
-        <p>The receiver circuit is designed to amplify signals on a 1 to 4 kHz range while filtering out (attenuating) noise outside that range.</p>
-        <p>Below are samples of our early circuit design for the receiver.</p>
+        <p>The receiver circuit is designed to amplify laser pulses on a 1 to 4 kHz range and attenuating noise outside that passband.</p>
+        <p>Below are samples of our early circuit design for the receiver. <span className="emphasize">(Artifact #1)</span></p>
       </>
     ),
     skills: ["Active filters", "Circuit design"],
     images: [receiver1, receiver2, receiver3]
+  },
+  {
+    title: "(WIP) Laser Tag Receiver PCB",
+    current: true,
+    description: (
+      <>
+        <p>After prototyping and testing with a simulation and breadboard, we designed a PCB version of our schematic in KiCad. <span className="emphasize">(Artifact #2)</span></p>
+        <p>We will solder and test our PCB once it arrives.</p>
+      </>
+    ),
+    skills: ["Hardware debugging", "KiCad", "PCB Design", "PCB footprint selection"],
+    images: [receiverPcb1, receiverPcb2]
+  },
+  {
+    title: "Diode characterization",
+    current: false,
+    description: (
+      <>
+        <p>Successfully measured the characteristics of a real diode <span className="emphasize">(Artifact #3)</span>:
+          <ul>
+            <li>saturation current (Is)</li>
+            <li>series resistance (Rs)</li>
+            <li>ideality factor (n)</li>
+          </ul>
+        </p>
+        <p>We accomplished this by creating a plot of diode current against diode voltage and fitting the parameters to the plot.</p>
+        <p>A MOSFET current source was required to obtain our measurements, as our function generator does not supply enough current on its own.</p>
+        <p>We then verified our parameters by comparing the behavior of a diode simulated with our values to that of our actual diode.</p>
+      </>
+    ),
+    skills: ["Component characterization"],
+    images: [diode1]
   },
   {
     title: "ngSPICE Experience",
@@ -162,7 +198,7 @@ export const coursework: Project[] = [
     description: (
       <>
         <p>My Circuit Design course creates opportunties for me to practice modeling and simulating circuits in SPICE.</p>
-        <p>Below is a model for a circuit which represents filtering for an AC photodiode signal, requiring a bias voltage on the Op Amp.</p>
+        <p>Below is a model for a circuit which represents filtering for an AC photodiode signal, requiring a bias voltage on the Op Amp. <span className="emphasize">(Artifact #4)</span></p>
       </>
     ),
     skills: ["SPICE"],

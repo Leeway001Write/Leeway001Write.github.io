@@ -102,6 +102,11 @@
   font-size: 1.2em;
 }
 
+.emphasize {
+  color: var(--color-secondary-mint);
+  font-weight: bold;
+}
+
 .project-skills-label {
   color: gray;
   padding: 0;
