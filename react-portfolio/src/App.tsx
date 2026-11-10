@@ -92,8 +92,8 @@ function App() {
               <div className="projects-header-box">
                 <h2>Coursework</h2>
                 <div className="blurb">
-                  <p>I'm currently in the "Junior Core" for BYU's Computer Engineering program, which consists of courses in Circuit Design, Embedded Systems, and Signals & Systems.</p>
-                  <p>My vision for this year of studying is that I grow my capacity for BYU's aim of <strong>"Lifelong Learning and Service"</strong> by staying engaged outside of raw courswork. I am discovering I can grow into this by focusing more on content and less on perfect grades, investing precious time into programs like competitive robotics or inventors competitions, and taking opportunities to talk with my peers about things other than homework.</p>
+                  <p>I'm currently in the Junior Core for BYU's Computer Engineering program, which consists of courses in Circuit Design, Embedded Systems, and Signals & Systems.</p>
+                  <p>BYU aims to graduate students who are prepared for <strong>"Lifelong Learning and Service"</strong>. These projects and others prepare me intellectually, and it is up to me to further grow into this principle. I am doing this by investing my time into programs like competitive robotics and entrepreneurial opportunities, taking opportunities to talk with my peers about things other than homework, focusing more on content and less on perfect grades, and pursuing non-techincal forms of learning.</p>
                 </div>
                 { courseworkLeftGroup.map((project, i) => (
                     <ProjectCard data={ project } key={"project-left-" + i}/>
