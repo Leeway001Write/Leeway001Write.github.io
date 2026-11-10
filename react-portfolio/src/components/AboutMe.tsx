@@ -9,6 +9,7 @@ export default function AboutMe() {
 		    <p>
 		      <span className="about-me-name"><strong>Hi! I'm Dallin.</strong></span>
 		      I'm an Undergraduate Student at <strong>Brigham Young University</strong> from Washington State
+			  <p>Seeking opportunities in <strong>embedded systems engineering</strong>, especially in <i>medical technology</i> or <i>robotics</i>.</p>
               <p>I'm studying <span className="about-me-highlight">Computer Engineering</span> and earning a minor in Computer Science.</p>
 		    </p>
 		    <p>My attitude regarding the rapidly growing technologies of today's world is that despite real negative impacts of tech, the right design and usage together can have a massive <strong>positive effect on the way we choose to live.</strong></p>
