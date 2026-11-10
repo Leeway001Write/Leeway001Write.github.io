@@ -154,7 +154,7 @@ export const coursework: Project[] = [
       <>
         <p>This year we are applying our circuit knowledge to design a Laser Tag system.</p>
         <p>The receiver circuit is designed to amplify laser pulses on a 1 to 4 kHz range and attenuating noise outside that passband.</p>
-        <p>Below are samples of our early circuit design for the receiver. <span className="emphasize">(Artifact #1)</span></p>
+        <p>Below are samples of our early <span className="emphasize">circuit design for the receiver.</span></p>
       </>
     ),
     skills: ["Active filters", "Circuit design"],
@@ -165,7 +165,7 @@ export const coursework: Project[] = [
     current: true,
     description: (
       <>
-        <p>After prototyping and testing with a simulation and breadboard, we designed a PCB version of our schematic in KiCad. <span className="emphasize">(Artifact #2)</span></p>
+        <p>After prototyping and testing with a simulation and breadboard, we designed and ordered a <span className="emphasize">PCB version of our schematic</span> in KiCad.</p>
         <p>We will solder and test our PCB once it arrives.</p>
       </>
     ),
@@ -177,13 +177,12 @@ export const coursework: Project[] = [
     current: false,
     description: (
       <>
-        <p>Successfully measured the characteristics of a real diode <span className="emphasize">(Artifact #3)</span>:
-          <ul>
-            <li>saturation current (Is)</li>
-            <li>series resistance (Rs)</li>
-            <li>ideality factor (n)</li>
-          </ul>
-        </p>
+        <p>Successfully measured the <span className="emphasize">characteristics of a real diode:</span></p>
+        <ul>
+          <li>saturation current (Is)</li>
+          <li>series resistance (Rs)</li>
+          <li>ideality factor (n)</li>
+        </ul>
         <p>We accomplished this by creating a plot of diode current against diode voltage and fitting the parameters to the plot.</p>
         <p>A MOSFET current source was required to obtain our measurements, as our function generator does not supply enough current on its own.</p>
         <p>We then verified our parameters by comparing the behavior of a diode simulated with our values to that of our actual diode.</p>
@@ -198,7 +197,7 @@ export const coursework: Project[] = [
     description: (
       <>
         <p>My Circuit Design course creates opportunties for me to practice modeling and simulating circuits in SPICE.</p>
-        <p>Below is a model for a circuit which represents filtering for an AC photodiode signal, requiring a bias voltage on the Op Amp. <span className="emphasize">(Artifact #4)</span></p>
+        <p>Below is a model for a circuit which represents filtering for an AC photodiode signal, requiring a bias voltage on the Op Amp.</p>
       </>
     ),
     skills: ["SPICE"],
