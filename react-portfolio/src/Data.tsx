@@ -165,8 +165,8 @@ export const coursework: Project[] = [
     current: true,
     description: (
       <>
-        <p>After prototyping and testing with a simulation and breadboard, we designed and ordered a <span className="emphasize">PCB version of our schematic</span> in KiCad.</p>
-        <p>We will solder and test our PCB once it arrives.</p>
+        <p>After prototyping and testing with a simulation and breadboard, we designed and ordered a <span className="emphasize">PCB version of our schematic</span> in KiCad, which I felt comfortable with and enjoyed. I took care to ensure the footprints would fit our selected components.</p>
+        <p>I will solder and test our PCB once it arrives.</p>
       </>
     ),
     skills: ["Hardware debugging", "KiCad", "PCB Design", "PCB footprint selection"],
@@ -183,9 +183,9 @@ export const coursework: Project[] = [
           <li>series resistance (Rs)</li>
           <li>ideality factor (n)</li>
         </ul>
-        <p>We accomplished this by creating a plot of diode current against diode voltage and fitting the parameters to the plot.</p>
+        <p>I accomplished this by creating a plot of diode current against diode voltage and fitting the parameters to the plot.</p>
         <p>A MOSFET current source was required to obtain our measurements, as our function generator does not supply enough current on its own.</p>
-        <p>We then verified our parameters by comparing the behavior of a diode simulated with our values to that of our actual diode.</p>
+        <p>I then verified our parameters by comparing the behavior of a diode simulated with our values to that of our actual diode.</p>
       </>
     ),
     skills: ["Component characterization"],
